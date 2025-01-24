@@ -1,0 +1,134 @@
+html, body {
+    height: 100%;
+}
+
+/* Base color scheme with pink hues */
+body {
+    margin: 0;
+    background-color: #FFE6F2; /* Light pink */
+    color: #7D235D; /* Deep pink for text */
+}
+
+/* Navigation bar with bubble-like links */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    background-color: #FFB3D9; /* Medium pink */
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF; /* White text */
+    font-size: 0.9em; /* Adjust font size to fit inside the bubbles */
+    font-weight: bold;
+    text-align: center;
+    background-color: #FF66A3; /* Vibrant pink */
+    width: 80px; /* Adjust size of the bubbles */
+    height: 80px;
+    border-radius: 50%; /* Creates the bubble shape */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    overflow: hidden; /* Ensure text stays within the bubbles */
+}
+
+nav a:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    background-color: #E6398F; /* Darker pink */
+}
+
+/* Text formatting for the page */
+h1, h2, h3 {
+    text-align: center;
+    color: #7D235D;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #7D235D;
+    padding: 0 20px;
+}
+
+/* Image and text alignment */
+.image-text-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.image-container {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main page image styling */
+.main-page .image-container img {
+    max-height: 200px; /* Larger image for the main page */
+    max-width: 200px;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    max-height: 100px; /* Default image size for other pages */
+    max-width: 100px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%; /* Make images circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Service section alignment: images always above text */
+.service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.service-container .image-container {
+    order: -1; /* Ensure images appear above the text */
+    margin-bottom: 20px;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #FFB3D9;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container h2, .footer-container p {
+    margin: 10px 0;
+    padding: 0;
+}

@@ -1,0 +1,156 @@
+html, body{
+    height: 100%;
+  }
+  /*create the base color scheme for the page here*/
+  body{ 
+    margin: 0;
+    background-color: #F5FBFF;
+    color: #000435;
+  }
+  /*Create the navigation bar, which I did with opposite colors from the body of the site. it spans the page with items centered*/
+  nav{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    background: #000435;
+    color: #F5FBFF;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /*LANDING PAGE*/
+  /*create formatting for links throughout the site*/
+  /*white links*/
+  a{
+    text-decoration: none;
+    color: #F5FBFF;
+    margin: 0 40px;
+  }
+  /*navy links*/
+  .custom-link{
+    text-decoration: none;
+    color: #000435;
+    margin: 0 0 10px 0;
+    display: block;
+  }
+  /*create formatting for the logo heading, which is my name*/
+  .logo-heading {
+    font-size: 2em; 
+    font-weight: bold; 
+}
+/*create formatting for the text next to images (my headshot)*/
+.image-text-section {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/*create classes for the alignment of text, centered and left-aligned*/
+.left-align {
+    text-align: left;
+}
+.center {
+    text-align: center;
+}
+
+/*create formatting for containing images*/
+.image-container {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center;
+}
+.image-container img {
+    max-height: 300px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
+/*create formatting for text containers*/
+.text-container {
+    flex: 1;
+    padding: 10px;
+}
+.text-container h2 { /*header*/
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.text-container p { /*body text*/
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/*QUALIFICATIONS PAGE*/
+
+/*create container for my resume, incluing the pdf viewer*/
+.resume-section {
+    padding: 10px;
+    text-align: center;
+}
+.resume-container {
+    border: 2px solid #000435;
+    background-color: #fff;
+    margin: 50px auto;
+    width: 80%;
+    height: 1000px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.pdf-viewer {
+    width: 100%;
+    height: 100%;
+    border: none; 
+}
+
+/*formatting for the listed qualifications*/
+.qualifications-section {
+    padding: 10px;
+    padding-left: 100px;
+    text-align: left;
+}
+.qualifications-list {
+    list-style: none;
+    padding-left: 20px;
+}
+.qualifications-list li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+/*SERVICE AND TECHNICAL PORTFOLIO PAGE*/
+
+/*create containers to hold each service activity: description + image*/
+.service-activity {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.service-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/*create footer to hold my contact info*/
+.footer {
+    background-color: #000435;
+    color: #F5FBFF; 
+    text-align: center;
+    padding: 20px;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container h2, .footer-container p {
+    margin: 10px 0;
+    padding: 0;
+}
+
